@@ -1,0 +1,149 @@
+{
+  "site": {
+    "name": "Seller Margin & Seller Profit Calculator",
+    "description": "Free seller margin and seller profit calculators for cross-border e-commerce sellers",
+    "tagline": "Calculate true seller margin and seller profit across Amazon FBA, TikTok Shop, Shopify, Flipkart, and payment platforms with transparent formulas and adjustable fee rates."
+  },
+  "nav": {
+    "home": "Home",
+    "amazonFba": "Amazon FBA",
+    "tiktokShop": "TikTok Shop",
+    "shopify": "Shopify",
+    "paymentFees": "Payment Fees",
+    "targetPrice": "Target Price",
+    "flipkart": "Flipkart",
+    "language": "中文"
+  },
+  "home": {
+    "heroTitle": "Seller Margin & Seller Profit Calculator",
+    "heroSubtitle": "Estimate true seller margins and seller profits across Amazon FBA, TikTok Shop, Shopify, Flipkart, and payment platforms with transparent formulas and adjustable fee rates.",
+    "whatIsTrueMargin": "What Is True Margin?",
+    "trueMarginExplanation": "True margin is your actual profit after subtracting all costs: product cost, shipping, platform fees, payment processing fees, advertising spend, refunds, and other expenses. Many sellers only look at revenue minus product cost, but the real picture includes every fee and deduction that reduces your bottom line.",
+    "whyItMatters": "Why True Margin Matters",
+    "whyItMattersExplanation": "Understanding your true margin helps you make informed pricing decisions, identify unprofitable products, optimize advertising spend, and build a sustainable business. Without accurate margin calculations, you might be losing money on sales you thought were profitable.",
+    "sellerTypes": "Who Uses These Calculators?",
+    "sellerTypesList": [
+      "Amazon FBA sellers estimating referral fees, fulfillment fees, and storage costs",
+      "TikTok Shop sellers calculating platform fees and creator commissions",
+      "Shopify store owners tracking payment processing and app subscription costs",
+      "Cross-border sellers managing multiple fee structures and currencies",
+      "E-commerce agencies and consultants evaluating product profitability"
+    ],
+    "faq": [
+      {
+        "question": "Are these calculators free to use?",
+        "answer": "Yes, all calculators are completely free with no login required."
+      },
+      {
+        "question": "How accurate are the calculations?",
+        "answer": "Our calculators provide estimates based on the fee rates you enter. Actual fees may vary based on product category, seller status, and platform policy changes. Always verify with official platform documentation."
+      },
+      {
+        "question": "Can I save my calculations?",
+        "answer": "Currently, calculations are not saved. We recommend bookmarking the page or taking screenshots for reference."
+      },
+      {
+        "question": "Do you support other platforms?",
+        "answer": "We plan to add more platforms in the future. Currently we support Amazon FBA, TikTok Shop, Shopify, and general payment fee calculations."
+      }
+    ]
+  },
+  "tools": {
+    "amazonFba": {
+      "name": "Amazon FBA Profit Calculator",
+      "description": "Estimate Amazon FBA seller margin and seller profit after referral fees, fulfillment fees, storage costs, and all other expenses.",
+      "shortDescription": "Calculate true seller margin and profit for Amazon FBA products",
+      "keywords": "seller margin calculator, seller profit calculator, amazon fba profit calculator, fba calculator, amazon seller profit, fba fees calculator"
+    },
+    "tiktokShop": {
+      "name": "TikTok Shop Profit Calculator",
+      "description": "Estimate TikTok Shop seller margin and seller profit after platform fees, creator commissions, and all other costs.",
+      "shortDescription": "Calculate true seller margin and profit for TikTok Shop products",
+      "keywords": "seller margin calculator, seller profit calculator, tiktok shop profit calculator, tiktok seller profit, tiktok shop fees"
+    },
+    "shopify": {
+      "name": "Shopify Profit Calculator",
+      "description": "Estimate Shopify seller margin and seller profit after payment fees, app subscriptions, and all other expenses.",
+      "shortDescription": "Calculate true seller margin and profit for Shopify products",
+      "keywords": "seller margin calculator, seller profit calculator, shopify profit calculator, shopify seller profit, shopify fees calculator"
+    },
+    "paymentFees": {
+      "name": "Payment Fee Calculator",
+      "description": "Calculate payment processing fees that affect seller margin and seller profit for PayPal, Stripe, Wise, and other providers.",
+      "shortDescription": "Calculate fees that affect seller margin and profit",
+      "keywords": "seller margin calculator, seller profit calculator, payment fee calculator, paypal fee calculator, stripe fee calculator, payment processing fees"
+    },
+    "targetPrice": {
+      "name": "Target Profit Price Calculator",
+      "description": "Reverse-calculate the selling price you need to achieve your target seller margin or seller profit.",
+      "shortDescription": "Calculate selling price for target seller profit",
+      "keywords": "seller margin calculator, seller profit calculator, target price calculator, profit margin calculator, pricing calculator, break even calculator"
+    },
+    "flipkart": {
+      "name": "Flipkart Seller Margin & Seller Profit Calculator",
+      "description": "Estimate Flipkart seller margin and seller profit after commission fees, shipping, collection fees, GST on fees, and all other expenses.",
+      "shortDescription": "Calculate true seller margin and profit for Flipkart sellers",
+      "keywords": "seller margin calculator, seller profit calculator, flipkart profit calculator, flipkart seller profit, flipkart fees calculator, flipkart commission calculator"
+    }
+  },
+  "calculator": {
+    "sellingPrice": "Selling Price",
+    "productCost": "Product Cost",
+    "shippingCost": "Shipping Cost",
+    "platformFeeRate": "Platform Fee Rate",
+    "platformFee": "Platform Fee",
+    "paymentFeeRate": "Payment Fee Rate",
+    "paymentFee": "Payment Fee",
+    "fixedPaymentFee": "Fixed Payment Fee",
+    "adCost": "Advertising Cost",
+    "refundRate": "Refund Rate",
+    "refundLoss": "Refund Loss",
+    "otherCost": "Other Cost",
+    "appCost": "App/Subscription Cost",
+    "creatorCommissionRate": "Creator Commission Rate",
+    "creatorCommission": "Creator Commission",
+    "storageCost": "Storage Cost",
+    "fulfillmentFee": "FBA Fulfillment Fee",
+    "totalCost": "Total Cost",
+    "netProfit": "Net Profit",
+    "profitMargin": "Profit Margin",
+    "roi": "ROI",
+    "breakEvenPrice": "Break-even Price",
+    "calculate": "Calculate",
+    "results": "Results",
+    "feeBreakdown": "Fee Breakdown",
+    "costBreakdown": "Cost Breakdown",
+    "formula": "Formula",
+    "example": "Example Calculation",
+    "disclaimer": "Disclaimer: These calculations are estimates. Actual fees may vary based on product category, seller status, and platform policy changes. Always verify with official platform documentation.",
+    "currency": "Currency",
+    "mode": "Mode",
+    "grossToNet": "Gross to Net",
+    "netToGross": "Net to Gross",
+    "grossAmount": "Gross Amount",
+    "netAmount": "Net Amount",
+    "feeAmount": "Fee Amount",
+    "effectiveFeeRate": "Effective Fee Rate",
+    "targetNetProfit": "Target Net Profit",
+    "targetProfitMargin": "Target Profit Margin",
+    "suggestedPrice": "Suggested Selling Price",
+    "amount": "Amount",
+    "feeRate": "Fee Rate",
+    "fixedFee": "Fixed Fee",
+    "commissionRate": "Commission Rate",
+    "collectionFeeRate": "Collection Fee Rate",
+    "gstOnFeesRate": "GST on Fees Rate",
+    "fixedFeePerOrder": "Fixed Fee per Order"
+  },
+  "relatedTools": "Related Tools",
+  "learnMore": "Learn More",
+  "tryNow": "Try Now",
+  "footer": {
+    "disclaimer": "Calculations are estimates. Always verify with official platform documentation.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contact": "Contact",
+    "about": "About Us",
+    "copyright": "© 2024-2025 Seller Margin Tools. All rights reserved."
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "site": {
+    "name": "跨境电商卖家利润计算器",
+    "description": "面向跨境电商卖家的免费利润计算器工具箱",
+    "tagline": "计算亚马逊 FBA、TikTok Shop、Shopify、Flipkart 和收款平台费用后的真实利润。"
+  },
+  "nav": {
+    "home": "首页",
+    "amazonFba": "亚马逊 FBA",
+    "tiktokShop": "TikTok Shop",
+    "shopify": "Shopify",
+    "paymentFees": "收款费用",
+    "targetPrice": "目标售价",
+    "flipkart": "Flipkart",
+    "language": "EN"
+  },
+  "home": {
+    "heroTitle": "面向跨境卖家的免费利润计算器",
+    "heroSubtitle": "帮助估算亚马逊 FBA、TikTok Shop、Shopify 等平台的真实利润，公式透明，费率可调。",
+    "whatIsTrueMargin": "什么是真实利润？",
+    "trueMarginExplanation": "真实利润是指扣除所有成本后的实际利润：产品成本、物流、平台费、收款手续费、广告支出、退款和其他费用。许多卖家只看收入减去产品成本，但真实的利润需要考虑每一项费用和扣款。",
+    "whyItMatters": "为什么真实利润很重要？",
+    "whyItMattersExplanation": "了解真实利润可以帮助您做出明智的定价决策、找出亏损产品、优化广告支出，并建立可持续的业务。如果没有准确的利润计算，您可能会在认为盈利的销售中实际亏损。",
+    "sellerTypes": "谁在使用这些计算器？",
+    "sellerTypesList": [
+      "亚马逊 FBA 卖家，估算佣金、配送费和仓储成本",
+      "TikTok Shop 卖家，计算平台费和达人佣金",
+      "Shopify 店主，追踪收款手续费和应用订阅成本",
+      "跨境卖家，管理多种费率结构和货币",
+      "电商代运营和顾问，评估产品盈利能力"
+    ],
+    "faq": [
+      {
+        "question": "这些计算器是免费的吗？",
+        "answer": "是的，所有计算器完全免费，无需登录。"
+      },
+      {
+        "question": "计算结果准确吗？",
+        "answer": "计算器根据您输入的费率提供估算。实际费用可能因产品类别、卖家状态和平台政策变化而有所不同。请以官方平台文档为准。"
+      },
+      {
+        "question": "可以保存计算结果吗？",
+        "answer": "目前计算结果不会保存。建议收藏页面或截图保存。"
+      },
+      {
+        "question": "支持其他平台吗？",
+        "answer": "我们计划未来添加更多平台。目前支持亚马逊 FBA、TikTok Shop、Shopify 和通用收款费用计算。"
+      }
+    ]
+  },
+  "tools": {
+    "amazonFba": {
+      "name": "亚马逊 FBA 利润计算器",
+      "description": "估算亚马逊 FBA 产品在佣金、配送费、仓储费和所有其他费用后的真实利润。",
+      "shortDescription": "计算亚马逊 FBA 产品的真实利润",
+      "keywords": "亚马逊 fba 利润计算器, fba 计算器, 亚马逊卖家利润, fba 费用计算器"
+    },
+    "tiktokShop": {
+      "name": "TikTok Shop 利润计算器",
+      "description": "估算 TikTok Shop 卖家在平台费、达人佣金和所有其他成本后的真实利润。",
+      "shortDescription": "计算 TikTok Shop 产品的真实利润",
+      "keywords": "tiktok shop 利润计算器, tiktok 卖家利润, tiktok shop 费用"
+    },
+    "shopify": {
+      "name": "Shopify 利润计算器",
+      "description": "估算 Shopify 店铺在收款手续费、应用订阅和所有其他费用后的真实利润。",
+      "shortDescription": "计算 Shopify 产品的真实利润",
+      "keywords": "shopify 利润计算器, shopify 卖家利润, shopify 费用计算器"
+    },
+    "paymentFees": {
+      "name": "跨境收款手续费计算器",
+      "description": "计算 PayPal、Stripe、Wise 等收款平台的手续费。支持从总额算净额和从净额反算总额。",
+      "shortDescription": "计算收款平台手续费",
+      "keywords": "收款手续费计算器, paypal 手续费计算器, stripe 手续费计算器, 跨境收款费用"
+    },
+    "targetPrice": {
+      "name": "目标利润售价计算器",
+      "description": "反算达到目标利润率或目标净利润所需的售价。",
+      "shortDescription": "计算目标利润售价",
+      "keywords": "目标售价计算器, 利润率计算器, 定价计算器, 盈亏平衡计算器"
+    },
+    "flipkart": {
+      "name": "Flipkart 卖家利润计算器",
+      "description": "估算 Flipkart 卖家在佣金、物流、代收费用、费用上的 GST 和所有其他费用后的真实利润。",
+      "shortDescription": "计算 Flipkart 卖家的真实利润",
+      "keywords": "flipkart 利润计算器, flipkart 卖家利润, flipkart 费用计算器, flipkart 佣金计算器"
+    }
+  },
+  "calculator": {
+    "sellingPrice": "售价",
+    "productCost": "产品成本",
+    "shippingCost": "物流成本",
+    "platformFeeRate": "平台费率",
+    "platformFee": "平台费",
+    "paymentFeeRate": "收款费率",
+    "paymentFee": "收款手续费",
+    "fixedPaymentFee": "固定收款费",
+    "adCost": "广告费用",
+    "refundRate": "退款率",
+    "refundLoss": "退款损失",
+    "otherCost": "其他成本",
+    "appCost": "应用/订阅成本",
+    "creatorCommissionRate": "达人佣金率",
+    "creatorCommission": "达人佣金",
+    "storageCost": "仓储费",
+    "fulfillmentFee": "FBA 配送费",
+    "totalCost": "总成本",
+    "netProfit": "净利润",
+    "profitMargin": "利润率",
+    "roi": "投资回报率",
+    "breakEvenPrice": "盈亏平衡价",
+    "calculate": "计算",
+    "results": "计算结果",
+    "feeBreakdown": "费用明细",
+    "costBreakdown": "成本明细",
+    "formula": "计算公式",
+    "example": "计算示例",
+    "disclaimer": "声明：计算结果仅供参考。实际费用可能因产品类别、卖家状态和平台政策变化而有所不同。请以官方平台文档为准。",
+    "currency": "货币",
+    "mode": "模式",
+    "grossToNet": "从总额算净额",
+    "netToGross": "从净额反算总额",
+    "grossAmount": "总额",
+    "netAmount": "净额",
+    "feeAmount": "手续费",
+    "effectiveFeeRate": "实际费率",
+    "targetNetProfit": "目标净利润",
+    "targetProfitMargin": "目标利润率",
+    "suggestedPrice": "建议售价",
+    "amount": "金额",
+    "feeRate": "费率",
+    "fixedFee": "固定费用",
+    "commissionRate": "佣金费率",
+    "collectionFeeRate": "代收费率",
+    "gstOnFeesRate": "费用 GST 税率",
+    "fixedFeePerOrder": "每单固定费用"
+  },
+  "relatedTools": "相关工具",
+  "learnMore": "了解更多",
+  "tryNow": "立即使用",
+  "footer": {
+    "disclaimer": "计算结果仅供参考，请以官方平台文档为准。",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "contact": "联系我们",
+    "about": "关于我们",
+    "copyright": "© 2024-2025 卖家利润工具箱。保留所有权利。"
+  }
+}
