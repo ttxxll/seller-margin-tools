@@ -3,6 +3,8 @@ import ProfitCalculator from '@/components/calculators/ProfitCalculator';
 import { getRelatedTools } from '@/lib/content/tools';
 import RelatedTools from '@/components/seo/RelatedTools';
 import FAQSection from '@/components/seo/FAQSection';
+import CalculatorGuide from '@/components/seo/CalculatorGuide';
+import { calculatorGuides } from '@/lib/content/calculatorGuides';
 import en from '@/lib/i18n/en.json';
 
 export const metadata: Metadata = {
@@ -19,6 +21,7 @@ export default function TikTokShopCalculatorPage() {
   const dict = en.calculator;
   const toolDict = en.tools.tiktokShop;
   const relatedTools = getRelatedTools('tiktok-shop-profit-calculator');
+  const guide = calculatorGuides.en.tiktokShop;
 
   const fields = [
     { key: 'sellingPrice', label: dict.sellingPrice, type: 'number' as const, suffix: '$', defaultValue: 24.99 },
@@ -145,6 +148,7 @@ export default function TikTokShopCalculatorPage() {
         }
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <CalculatorGuide title={guide.title} intro={guide.intro} sections={guide.sections} />
         <FAQSection title="FAQ" items={faqItems} />
         <RelatedTools
           title={en.relatedTools}

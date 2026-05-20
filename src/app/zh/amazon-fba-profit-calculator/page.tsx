@@ -3,6 +3,8 @@ import ProfitCalculator from '@/components/calculators/ProfitCalculator';
 import { getRelatedTools } from '@/lib/content/tools';
 import RelatedTools from '@/components/seo/RelatedTools';
 import FAQSection from '@/components/seo/FAQSection';
+import CalculatorGuide from '@/components/seo/CalculatorGuide';
+import { calculatorGuides } from '@/lib/content/calculatorGuides';
 import zh from '@/lib/i18n/zh.json';
 
 export const metadata: Metadata = {
@@ -19,6 +21,7 @@ export default function ZhAmazonFbaCalculatorPage() {
   const dict = zh.calculator;
   const toolDict = zh.tools.amazonFba;
   const relatedTools = getRelatedTools('amazon-fba-profit-calculator');
+  const guide = calculatorGuides.zh.amazonFba;
 
   const fields = [
     { key: 'sellingPrice', label: dict.sellingPrice, type: 'number' as const, suffix: '$', defaultValue: 29.99 },
@@ -154,6 +157,7 @@ export default function ZhAmazonFbaCalculatorPage() {
         }
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <CalculatorGuide title={guide.title} intro={guide.intro} sections={guide.sections} />
         <FAQSection title="常见问题" items={faqItems} />
         <RelatedTools
           title={zh.relatedTools}

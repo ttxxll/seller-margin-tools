@@ -3,6 +3,8 @@ import PaymentFeeCalculator from '@/components/calculators/PaymentFeeCalculator'
 import { getRelatedTools } from '@/lib/content/tools';
 import RelatedTools from '@/components/seo/RelatedTools';
 import FAQSection from '@/components/seo/FAQSection';
+import CalculatorGuide from '@/components/seo/CalculatorGuide';
+import { calculatorGuides } from '@/lib/content/calculatorGuides';
 import en from '@/lib/i18n/en.json';
 
 export const metadata: Metadata = {
@@ -19,6 +21,7 @@ export default function PaymentFeeCalculatorPage() {
   const dict = en.calculator;
   const toolDict = en.tools.paymentFees;
   const relatedTools = getRelatedTools('payment-fee-calculator');
+  const guide = calculatorGuides.en.paymentFees;
 
   const faqItems = [
     {
@@ -148,6 +151,7 @@ export default function PaymentFeeCalculatorPage() {
         }
       />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <CalculatorGuide title={guide.title} intro={guide.intro} sections={guide.sections} />
         <FAQSection title="FAQ" items={faqItems} />
         <RelatedTools
           title={en.relatedTools}
