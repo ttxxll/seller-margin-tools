@@ -12,6 +12,7 @@
     "paymentFees": "Payment Fees",
     "targetPrice": "Target Price",
     "flipkart": "Flipkart",
+    "profitDiagnosis": "Diagnosis",
     "language": "中文"
   },
   "home": {
@@ -84,6 +85,12 @@
       "description": "Estimate Flipkart seller margin and seller profit after commission fees, shipping, collection fees, GST on fees, and all other expenses.",
       "shortDescription": "Calculate true seller margin and profit for Flipkart sellers",
       "keywords": "seller margin calculator, seller profit calculator, flipkart profit calculator, flipkart seller profit, flipkart fees calculator, flipkart commission calculator"
+    },
+    "profitDiagnosis": {
+      "name": "Profit Diagnosis & Scenario Comparison",
+      "description": "Compare pricing, cost, advertising, fee, and refund scenarios to diagnose weak margins and find the biggest profit levers.",
+      "shortDescription": "Compare scenarios and diagnose profit risks",
+      "keywords": "profit diagnosis calculator, seller margin calculator, scenario comparison tool, ecommerce profit optimization, margin diagnosis"
     }
   },
   "calculator": {
@@ -133,7 +140,55 @@
     "commissionRate": "Commission Rate",
     "collectionFeeRate": "Collection Fee Rate",
     "gstOnFeesRate": "GST on Fees Rate",
-    "fixedFeePerOrder": "Fixed Fee per Order"
+    "fixedFeePerOrder": "Fixed Fee per Order",
+    "profitDiagnosis": {
+      "title": "Profit Diagnosis & Scenario Comparison",
+      "description": "Enter one baseline product model, then compare pricing, cost, ad, fee, and refund changes to see which plan earns more and where margin risk comes from.",
+      "baseline": "Baseline",
+      "scenarioAdjustments": "Scenario Adjustments",
+      "scenarioA": "Plan A: Raise Price",
+      "scenarioB": "Plan B: Cut Costs",
+      "scenarioC": "Plan C: Improve Ads & Refunds",
+      "bestScenario": "Best Plan",
+      "comparison": "Scenario Comparison",
+      "diagnosis": "Profit Diagnosis",
+      "topLevers": "Top Profit Levers",
+      "deltaVsBaseline": "Delta vs baseline",
+      "priceChange": "Price Change",
+      "productCostChange": "Product Cost Change",
+      "shippingCostChange": "Shipping Change",
+      "platformFeeRateChange": "Platform Fee Rate Change",
+      "paymentFeeRateChange": "Payment Fee Rate Change",
+      "adCostChange": "Ad Cost Change",
+      "refundRateChange": "Refund Rate Change",
+      "percentagePointHint": "Rate changes are absolute percentage-point changes. For example, -1 means the rate drops by 1 percentage point.",
+      "baselineLabel": "Baseline",
+      "netProfitDelta": "Profit Delta",
+      "totalCostDelta": "Cost Delta",
+      "costShare": "Share",
+      "noWarnings": "No major margin warnings for this plan.",
+      "diagnosisLabels": {
+        "LOSS_MAKING": "This plan loses money per order.",
+        "LOW_MARGIN": "Margin is positive but thin.",
+        "HIGH_AD_COST": "Advertising takes a large share of revenue.",
+        "HIGH_REFUND_RATE": "Refund risk is high.",
+        "HIGH_PRODUCT_COST_SHARE": "Product cost is the biggest pressure point.",
+        "HIGH_SHIPPING_COST_SHARE": "Shipping cost is heavy for this price point.",
+        "HIGH_VARIABLE_FEE_RATE": "Percentage fees and refund loss consume too much price.",
+        "LOW_BREAK_EVEN_BUFFER": "Selling price is too close to break-even.",
+        "HEALTHY_MARGIN": "This plan has a healthy margin buffer."
+      },
+      "leverLabels": {
+        "PRODUCT_COST": "Product Cost",
+        "SHIPPING_COST": "Shipping Cost",
+        "PLATFORM_FEE": "Platform Fee",
+        "PAYMENT_FEE": "Payment Fee",
+        "AD_COST": "Advertising Cost",
+        "REFUND_LOSS": "Refund Loss",
+        "OTHER_COST": "Other Cost",
+        "PLATFORM_SPECIFIC_COSTS": "Platform-specific Costs"
+      }
+    }
   },
   "relatedTools": "Related Tools",
   "learnMore": "Learn More",

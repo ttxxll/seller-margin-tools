@@ -269,17 +269,13 @@ export default function ZhHomePage() {
           {/* Results Panel */}
           <div className="lg:col-span-7 space-y-6">
             {activePlatform === 'amazon' && amazonResult && (
-              <div className="space-y-5 animate-fade-in">
-                <div className="bg-gradient-to-br from-blue-50/80 to-white rounded-2xl border border-blue-100/60 p-6 result-glow">
-                  <div className="grid grid-cols-2 gap-4">
-                    <BigMetric label={dict.netProfit} value={amazonResult.netProfit} isCurrency primary />
-                    <BigMetric label={dict.profitMargin} value={amazonResult.profitMargin} isPercent primary />
-                  </div>
-                </div>
-                <div className="grid grid-cols-2 gap-4">
+              <ResultShell>
+                <MetricsGrid>
+                  <BigMetric label={dict.netProfit} value={amazonResult.netProfit} isCurrency primary />
+                  <BigMetric label={dict.profitMargin} value={amazonResult.profitMargin} isPercent primary />
                   <MetricCard label={dict.roi} value={amazonResult.roi} isPercent />
                   <MetricCard label={dict.breakEvenPrice} value={amazonResult.breakEvenPrice} isCurrency />
-                </div>
+                </MetricsGrid>
                 <ResultBreakdown title={dict.results} rows={[
                   { label: '售价', value: amazonResult.revenue },
                   { label: '佣金', value: -amazonResult.platformFee },
@@ -288,26 +284,20 @@ export default function ZhHomePage() {
                   { label: dict.refundLoss, value: -amazonResult.refundLoss },
                   { label: dict.totalCost, value: -amazonResult.totalCost },
                   { label: dict.netProfit, value: amazonResult.netProfit, highlight: true, negative: amazonResult.netProfit < 0 },
-                ]} />
-                <Link href="/zh/amazon-fba-profit-calculator" className="inline-flex items-center gap-1 text-sm text-blue-600 font-medium hover:text-blue-700 transition-colors">
-                  查看详细计算器
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-                </Link>
-              </div>
+                ]} compact />
+                <DiagnosisButton href="/zh/profit-diagnosis-calculator">进入利润诊断</DiagnosisButton>
+                <DetailLink href="/zh/amazon-fba-profit-calculator">查看详细计算器</DetailLink>
+              </ResultShell>
             )}
 
             {activePlatform === 'tiktok' && tiktokResult && (
-              <div className="space-y-5 animate-fade-in">
-                <div className="bg-gradient-to-br from-blue-50/80 to-white rounded-2xl border border-blue-100/60 p-6 result-glow">
-                  <div className="grid grid-cols-2 gap-4">
-                    <BigMetric label={dict.netProfit} value={tiktokResult.netProfit} isCurrency primary />
-                    <BigMetric label={dict.profitMargin} value={tiktokResult.profitMargin} isPercent primary />
-                  </div>
-                </div>
-                <div className="grid grid-cols-2 gap-4">
+              <ResultShell>
+                <MetricsGrid>
+                  <BigMetric label={dict.netProfit} value={tiktokResult.netProfit} isCurrency primary />
+                  <BigMetric label={dict.profitMargin} value={tiktokResult.profitMargin} isPercent primary />
                   <MetricCard label={dict.roi} value={tiktokResult.roi} isPercent />
                   <MetricCard label={dict.breakEvenPrice} value={tiktokResult.breakEvenPrice} isCurrency />
-                </div>
+                </MetricsGrid>
                 <ResultBreakdown title={dict.results} rows={[
                   { label: '售价', value: tiktokResult.revenue },
                   { label: '平台费', value: -tiktokResult.platformFee },
@@ -316,26 +306,20 @@ export default function ZhHomePage() {
                   { label: dict.refundLoss, value: -tiktokResult.refundLoss },
                   { label: dict.totalCost, value: -tiktokResult.totalCost },
                   { label: dict.netProfit, value: tiktokResult.netProfit, highlight: true, negative: tiktokResult.netProfit < 0 },
-                ]} />
-                <Link href="/zh/tiktok-shop-profit-calculator" className="inline-flex items-center gap-1 text-sm text-blue-600 font-medium hover:text-blue-700 transition-colors">
-                  查看详细计算器
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-                </Link>
-              </div>
+                ]} compact />
+                <DiagnosisButton href="/zh/profit-diagnosis-calculator">进入利润诊断</DiagnosisButton>
+                <DetailLink href="/zh/tiktok-shop-profit-calculator">查看详细计算器</DetailLink>
+              </ResultShell>
             )}
 
             {activePlatform === 'shopify' && shopifyResult && (
-              <div className="space-y-5 animate-fade-in">
-                <div className="bg-gradient-to-br from-blue-50/80 to-white rounded-2xl border border-blue-100/60 p-6 result-glow">
-                  <div className="grid grid-cols-2 gap-4">
-                    <BigMetric label={dict.netProfit} value={shopifyResult.netProfit} isCurrency primary />
-                    <BigMetric label={dict.profitMargin} value={shopifyResult.profitMargin} isPercent primary />
-                  </div>
-                </div>
-                <div className="grid grid-cols-2 gap-4">
+              <ResultShell>
+                <MetricsGrid>
+                  <BigMetric label={dict.netProfit} value={shopifyResult.netProfit} isCurrency primary />
+                  <BigMetric label={dict.profitMargin} value={shopifyResult.profitMargin} isPercent primary />
                   <MetricCard label={dict.roi} value={shopifyResult.roi} isPercent />
                   <MetricCard label={dict.breakEvenPrice} value={shopifyResult.breakEvenPrice} isCurrency />
-                </div>
+                </MetricsGrid>
                 <ResultBreakdown title={dict.results} rows={[
                   { label: '售价', value: shopifyResult.revenue },
                   { label: '收款手续费', value: -shopifyResult.paymentFee },
@@ -344,68 +328,64 @@ export default function ZhHomePage() {
                   { label: dict.refundLoss, value: -shopifyResult.refundLoss },
                   { label: dict.totalCost, value: -shopifyResult.totalCost },
                   { label: dict.netProfit, value: shopifyResult.netProfit, highlight: true, negative: shopifyResult.netProfit < 0 },
-                ]} />
-                <Link href="/zh/shopify-profit-calculator" className="inline-flex items-center gap-1 text-sm text-blue-600 font-medium hover:text-blue-700 transition-colors">
-                  查看详细计算器
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-                </Link>
-              </div>
+                ]} compact />
+                <DiagnosisButton href="/zh/profit-diagnosis-calculator">进入利润诊断</DiagnosisButton>
+                <DetailLink href="/zh/shopify-profit-calculator">查看详细计算器</DetailLink>
+              </ResultShell>
             )}
 
             {activePlatform === 'payment' && paymentResult && (
-              <div className="space-y-5 animate-fade-in">
-                <div className="bg-gradient-to-br from-blue-50/80 to-white rounded-2xl border border-blue-100/60 p-6 result-glow">
-                  <p className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">净额</p>
-                  <p className="text-3xl font-bold text-gray-900 tabular-nums">${paymentResult.netAmount.toFixed(2)}</p>
-                </div>
-                <div className="grid grid-cols-2 gap-4">
+              <ResultShell>
+                <MetricsGrid>
+                  <BigMetric label="净额" value={paymentResult.netAmount} isCurrency primary />
                   <MetricCard label={dict.feeAmount} value={paymentResult.feeAmount} isCurrency />
                   <MetricCard label="实际费率" value={paymentResult.effectiveFeeRate} isPercent />
-                </div>
-                <Link href="/zh/payment-fee-calculator" className="inline-flex items-center gap-1 text-sm text-blue-600 font-medium hover:text-blue-700 transition-colors">
-                  查看详细计算器
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-                </Link>
-              </div>
+                </MetricsGrid>
+                <ResultBreakdown title={dict.results} rows={[
+                  { label: dict.grossAmount, value: paymentResult.grossAmount },
+                  { label: dict.feeAmount, value: -paymentResult.feeAmount },
+                  { label: dict.netAmount, value: paymentResult.netAmount, highlight: true },
+                  { label: dict.effectiveFeeRate, value: paymentResult.effectiveFeeRate, isPercent: true },
+                ]} compact />
+                <DiagnosisButton href="/zh/profit-diagnosis-calculator">进入利润诊断</DiagnosisButton>
+                <DetailLink href="/zh/payment-fee-calculator">查看详细计算器</DetailLink>
+              </ResultShell>
             )}
 
             {activePlatform === 'target' && targetResult && (
-              <div className="space-y-5 animate-fade-in">
+              <ResultShell>
                 {targetResult.isValid ? (
                   <>
-                    <div className="bg-gradient-to-br from-emerald-50/80 to-white rounded-2xl border border-emerald-200/60 p-7 text-center result-glow-success">
-                      <p className="text-sm font-medium text-emerald-600 mb-2">建议售价</p>
-                      <p className="text-4xl font-bold text-emerald-700 tabular-nums tracking-tight">${targetResult.suggestedPrice.toFixed(2)}</p>
-                    </div>
-                    <div className="grid grid-cols-2 gap-4">
+                    <MetricsGrid>
+                      <BigMetric label="建议售价" value={targetResult.suggestedPrice} isCurrency primary />
                       <MetricCard label={dict.netProfit} value={targetResult.netProfit} isCurrency />
                       <MetricCard label={dict.breakEvenPrice} value={targetResult.breakEvenPrice} isCurrency />
-                    </div>
+                    </MetricsGrid>
+                    <ResultBreakdown title={dict.results} rows={[
+                      { label: dict.suggestedPrice, value: targetResult.suggestedPrice, highlight: true },
+                      { label: dict.netProfit, value: targetResult.netProfit },
+                      { label: dict.profitMargin, value: targetResult.profitMargin, isPercent: true },
+                      { label: dict.breakEvenPrice, value: targetResult.breakEvenPrice },
+                    ]} compact />
                   </>
                 ) : (
                   <div className="bg-red-50 border border-red-200 rounded-2xl p-5">
                     <p className="text-red-700">{targetResult.errorMessage}</p>
                   </div>
                 )}
-                <Link href="/zh/target-profit-price-calculator" className="inline-flex items-center gap-1 text-sm text-blue-600 font-medium hover:text-blue-700 transition-colors">
-                  查看详细计算器
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-                </Link>
-              </div>
+                <DiagnosisButton href="/zh/profit-diagnosis-calculator">进入利润诊断</DiagnosisButton>
+                <DetailLink href="/zh/target-profit-price-calculator">查看详细计算器</DetailLink>
+              </ResultShell>
             )}
 
             {activePlatform === 'flipkart' && flipkartResult && (
-              <div className="space-y-5 animate-fade-in">
-                <div className="bg-gradient-to-br from-blue-50/80 to-white rounded-2xl border border-blue-100/60 p-6 result-glow">
-                  <div className="grid grid-cols-2 gap-4">
-                    <BigMetric label={dict.netProfit} value={flipkartResult.netProfit} isCurrency primary />
-                    <BigMetric label={dict.profitMargin} value={flipkartResult.profitMargin} isPercent primary />
-                  </div>
-                </div>
-                <div className="grid grid-cols-2 gap-4">
+              <ResultShell>
+                <MetricsGrid>
+                  <BigMetric label={dict.netProfit} value={flipkartResult.netProfit} isCurrency primary />
+                  <BigMetric label={dict.profitMargin} value={flipkartResult.profitMargin} isPercent primary />
                   <MetricCard label={dict.roi} value={flipkartResult.roi} isPercent />
                   <MetricCard label={dict.breakEvenPrice} value={flipkartResult.breakEvenPrice} isCurrency />
-                </div>
+                </MetricsGrid>
                 <ResultBreakdown title={dict.results} rows={[
                   { label: '售价', value: flipkartResult.revenue },
                   { label: '佣金', value: -flipkartResult.platformFee },
@@ -415,12 +395,10 @@ export default function ZhHomePage() {
                   { label: dict.refundLoss, value: -flipkartResult.refundLoss },
                   { label: dict.totalCost, value: -flipkartResult.totalCost },
                   { label: dict.netProfit, value: flipkartResult.netProfit, highlight: true, negative: flipkartResult.netProfit < 0 },
-                ]} />
-                <Link href="/zh/flipkart-profit-calculator" className="inline-flex items-center gap-1 text-sm text-blue-600 font-medium hover:text-blue-700 transition-colors">
-                  查看详细计算器
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-                </Link>
-              </div>
+                ]} compact />
+                <DiagnosisButton href="/zh/profit-diagnosis-calculator">进入利润诊断</DiagnosisButton>
+                <DetailLink href="/zh/flipkart-profit-calculator">查看详细计算器</DetailLink>
+              </ResultShell>
             )}
 
             {/* Empty State */}
@@ -619,6 +597,13 @@ export default function ZhHomePage() {
               <h3 className="text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">{zh.tools.targetPrice.name}</h3>
               <p className="text-sm text-gray-500 mt-1.5 leading-relaxed">{zh.tools.targetPrice.shortDescription}</p>
             </Link>
+            <Link href="/zh/profit-diagnosis-calculator" className="bg-white rounded-2xl border border-blue-100 p-7 card-shadow hover:card-shadow-lg hover:-translate-y-0.5 transition-all duration-200 group">
+              <div className="w-11 h-11 bg-blue-50 rounded-xl flex items-center justify-center mb-4">
+                <span className="text-xl font-bold text-blue-600">▦</span>
+              </div>
+              <h3 className="text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">{zh.tools.profitDiagnosis.name}</h3>
+              <p className="text-sm text-gray-500 mt-1.5 leading-relaxed">{zh.tools.profitDiagnosis.shortDescription}</p>
+            </Link>
           </div>
         </div>
 
@@ -631,6 +616,18 @@ export default function ZhHomePage() {
   );
 }
 
+function ResultShell({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="animate-fade-in bg-white rounded-3xl border border-gray-200/70 card-shadow p-5 sm:p-6 space-y-5">
+      {children}
+    </div>
+  );
+}
+
+function MetricsGrid({ children }: { children: React.ReactNode }) {
+  return <div className="grid grid-cols-2 gap-x-6 gap-y-5">{children}</div>;
+}
+
 function BigMetric({ label, value, isPercent }: {
   label: string; value: number; isCurrency?: boolean; isPercent?: boolean; primary?: boolean;
 }) {
@@ -639,7 +636,7 @@ function BigMetric({ label, value, isPercent }: {
     : `${value >= 0 ? '+' : '-'}$${Math.abs(value).toFixed(2)}`;
 
   return (
-    <div>
+    <div className="min-w-0">
       <p className="text-xs font-medium text-gray-400 uppercase tracking-wider mb-1.5">{label}</p>
       <p className={`text-3xl font-bold tabular-nums tracking-tight ${value >= 0 ? 'text-emerald-600' : 'text-red-500'}`}>
         {formatted}
@@ -648,7 +645,7 @@ function BigMetric({ label, value, isPercent }: {
   );
 }
 
-function MetricCard({ label, value, isPercent, highlight }: {
+function MetricCard({ label, value, isPercent }: {
   label: string; value: number; isCurrency?: boolean; isPercent?: boolean; highlight?: boolean;
 }) {
   const formatted = isPercent
@@ -656,11 +653,31 @@ function MetricCard({ label, value, isPercent, highlight }: {
     : `${value >= 0 ? '' : '-'}$${Math.abs(value).toFixed(2)}`;
 
   return (
-    <div className={`rounded-2xl border p-5 hover:shadow-lg transition-all duration-200 ${highlight ? 'border-blue-200 bg-blue-50/50 result-glow' : 'bg-white border-gray-200/60 card-shadow hover:-translate-y-0.5'}`}>
+    <div className="min-w-0 border-t border-gray-100 pt-4">
       <p className="text-xs font-medium text-gray-400 uppercase tracking-wider mb-1.5">{label}</p>
       <p className={`text-2xl font-bold tabular-nums tracking-tight ${value >= 0 ? 'text-emerald-600' : 'text-red-500'}`}>
         {formatted}
       </p>
     </div>
+  );
+}
+
+function DiagnosisButton({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <Link
+      href={href}
+      className="flex items-center justify-center rounded-xl bg-blue-600 px-4 py-3 text-sm font-semibold text-white shadow-md shadow-blue-600/20 hover:bg-blue-700 transition-colors"
+    >
+      {children}
+    </Link>
+  );
+}
+
+function DetailLink({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <Link href={href} className="inline-flex items-center gap-1 text-sm text-blue-600 font-medium hover:text-blue-700 transition-colors">
+      {children}
+      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+    </Link>
   );
 }

@@ -185,6 +185,34 @@ export const calculatorGuides: Record<Locale, Record<ToolId, CalculatorGuideCont
         },
       ],
     },
+    profitDiagnosis: {
+      title: 'How to compare profit scenarios and diagnose margin risk',
+      intro:
+        'A single profit number rarely tells sellers what to do next. This diagnosis tool compares a baseline product model against several pricing, cost, advertising, fee, and refund scenarios so you can see which change creates the strongest contribution profit and which cost driver deserves attention first.',
+      sections: [
+        {
+          heading: 'Start with a realistic baseline',
+          paragraphs: [
+            'The baseline should represent today’s expected order economics: selling price, landed product cost, shipping or fulfillment cost, platform fee rate, payment fee, advertising cost per order, refund rate, and other operating costs. Treat it as the control case. If the baseline is too optimistic, every comparison will look better than reality.',
+            'Use per-order values whenever possible. Advertising cost should be the expected acquisition cost for one order, not the full campaign budget. Other cost can include coupons, affiliate payouts, packaging upgrades, software allocation, customer support credits, or any recurring expense that changes contribution profit.',
+          ],
+        },
+        {
+          heading: 'Compare plans by profit, margin, and ROI',
+          paragraphs: [
+            'Each scenario applies direct changes to the baseline, such as raising price, reducing product cost, lowering shipping, improving ad cost, or reducing refund rate. The tool calculates net profit, profit margin, ROI, break-even price, and the difference versus baseline for every plan. The best plan is selected by net profit first, then profit margin, then ROI.',
+            'Rate changes are entered as percentage-point changes. For example, if refund rate starts at 3%, entering -1 changes the scenario refund rate to 2%. This keeps scenario planning easy to read when testing fee negotiations, lower returns, or a different payment provider.',
+          ],
+        },
+        {
+          heading: 'Use diagnoses and levers to decide what to improve',
+          paragraphs: [
+            'The diagnosis panel flags common risks: loss-making plans, thin margins, high ad burden, high refund risk, heavy product or shipping cost, high variable fee rates, and prices that are too close to break-even. These signals help sellers avoid scaling a plan that only works in a perfect order scenario.',
+            'The top levers panel ranks the largest cost components by amount and share of revenue. If product cost dominates, supplier negotiation or bundle design may matter more than ad tweaks. If ad cost dominates, improving conversion or targeting may unlock more profit than small fee changes. Use the ranking to focus on the change with the biggest real impact.',
+          ],
+        },
+      ],
+    },
   },
   zh: {
     amazonFba: {
@@ -357,6 +385,34 @@ export const calculatorGuides: Record<Locale, Record<ToolId, CalculatorGuideCont
           paragraphs: [
             '扣除广告和退货后，Flipkart 商品通常希望仍能保持 10%–20% 的净利润率；退货波动大、促销压力强或物流成本高的类目，需要更高安全边际。对跨境或进口卖家来说，还要关注库存周转、回款周期和税费抵扣时间，因为这些会影响现金流。',
             '在参加大促、设置优惠券或提高广告出价前，应先用计算器模拟活动价。如果只有在零退货、低广告和低固定费的理想情况下才盈利，这个 listing 并不稳健。可持续的 Flipkart 商品，应在佣金变化、退货增加和促销折扣后仍保留一定利润空间。',
+          ],
+        },
+      ],
+    },
+    profitDiagnosis: {
+      title: '如何用方案对比诊断利润问题',
+      intro:
+        '单个利润数字只能告诉你“赚不赚钱”，却不能告诉你“该改哪里”。利润诊断工具把当前基准方案与多个定价、成本、广告、费率和退款方案放在一起比较，帮助卖家判断哪个方案更赚钱，以及利润风险来自哪一项成本。',
+      sections: [
+        {
+          heading: '先建立可信的基准方案',
+          paragraphs: [
+            '基准方案应代表当前或预期的真实单笔订单模型，包括售价、产品落地成本、物流或履约成本、平台费率、收款手续费、每单广告成本、退款率和其他经营成本。它相当于对照组。如果基准数据过于乐观，后续方案对比也会失真。',
+            '尽量使用每单数据。广告费应填写预计每单获客成本，而不是整个广告预算。其他成本可以放入优惠券、联盟佣金、包装升级、软件分摊、客服补偿或任何会影响贡献利润的费用。',
+          ],
+        },
+        {
+          heading: '同时看净利润、利润率和 ROI',
+          paragraphs: [
+            '每个方案都是在基准上做直接调整，例如提高售价、降低产品成本、降低物流、优化广告费用或降低退款率。工具会计算每个方案的净利润、利润率、ROI、盈亏平衡价，以及相对基准的变化。最佳方案会优先按净利润排序，其次看利润率，再看 ROI。',
+            '费率变化用百分点输入。例如基准退款率是 3%，填写 -1 表示方案退款率变成 2%。这样在测试费率谈判、降低退货或更换收款通道时，更容易理解每个变化的真实含义。',
+          ],
+        },
+        {
+          heading: '用诊断和成本杠杆决定优先级',
+          paragraphs: [
+            '诊断面板会提示常见风险：每单亏损、利润率偏薄、广告成本占比高、退款风险高、产品或物流成本过重、费率过高、售价距离盈亏平衡价太近等。它的作用是防止卖家放大一个只在理想情况下才盈利的方案。',
+            '主要杠杆会按金额和收入占比排序展示成本项。如果产品成本最大，供应商谈判或组合装设计可能比微调广告更重要；如果广告成本最大，提升转化率和投放效率可能比降低小额手续费更有价值。优先处理影响最大的杠杆，方案对比才有决策意义。',
           ],
         },
       ],

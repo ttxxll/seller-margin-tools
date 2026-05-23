@@ -12,6 +12,7 @@
     "paymentFees": "收款费用",
     "targetPrice": "目标售价",
     "flipkart": "Flipkart",
+    "profitDiagnosis": "利润诊断",
     "language": "EN"
   },
   "home": {
@@ -84,6 +85,12 @@
       "description": "估算 Flipkart 卖家在佣金、物流、代收费用、费用上的 GST 和所有其他费用后的真实利润。",
       "shortDescription": "计算 Flipkart 卖家的真实利润",
       "keywords": "flipkart 利润计算器, flipkart 卖家利润, flipkart 费用计算器, flipkart 佣金计算器"
+    },
+    "profitDiagnosis": {
+      "name": "利润诊断与方案对比",
+      "description": "对比不同定价、成本、广告、费率和退款方案，诊断薄弱利润率，找出最值得优化的利润杠杆。",
+      "shortDescription": "对比方案并诊断利润风险",
+      "keywords": "利润诊断, 方案对比, 跨境电商利润优化, 利润率诊断, 卖家利润分析"
     }
   },
   "calculator": {
@@ -133,7 +140,55 @@
     "commissionRate": "佣金费率",
     "collectionFeeRate": "代收费率",
     "gstOnFeesRate": "费用 GST 税率",
-    "fixedFeePerOrder": "每单固定费用"
+    "fixedFeePerOrder": "每单固定费用",
+    "profitDiagnosis": {
+      "title": "利润诊断与方案对比",
+      "description": "输入一个基准商品模型，再对比定价、成本、广告、费率和退款变化，快速判断哪个方案更赚钱、利润风险来自哪里。",
+      "baseline": "基准方案",
+      "scenarioAdjustments": "方案调整",
+      "scenarioA": "方案 A：提高售价",
+      "scenarioB": "方案 B：降低成本",
+      "scenarioC": "方案 C：优化广告与退款",
+      "bestScenario": "最佳方案",
+      "comparison": "方案对比",
+      "diagnosis": "利润诊断",
+      "topLevers": "主要利润杠杆",
+      "deltaVsBaseline": "相对基准变化",
+      "priceChange": "售价变化",
+      "productCostChange": "产品成本变化",
+      "shippingCostChange": "物流变化",
+      "platformFeeRateChange": "平台费率变化",
+      "paymentFeeRateChange": "收款费率变化",
+      "adCostChange": "广告费变化",
+      "refundRateChange": "退款率变化",
+      "percentagePointHint": "费率变化使用百分点。比如 -1 表示费率下降 1 个百分点。",
+      "baselineLabel": "基准方案",
+      "netProfitDelta": "利润变化",
+      "totalCostDelta": "成本变化",
+      "costShare": "占比",
+      "noWarnings": "这个方案暂无明显利润风险。",
+      "diagnosisLabels": {
+        "LOSS_MAKING": "这个方案每单会亏损。",
+        "LOW_MARGIN": "利润为正，但利润率偏薄。",
+        "HIGH_AD_COST": "广告成本占收入比例偏高。",
+        "HIGH_REFUND_RATE": "退款风险偏高。",
+        "HIGH_PRODUCT_COST_SHARE": "产品成本是主要压力点。",
+        "HIGH_SHIPPING_COST_SHARE": "当前价格下物流成本偏重。",
+        "HIGH_VARIABLE_FEE_RATE": "费率和退款损失吃掉了过多售价。",
+        "LOW_BREAK_EVEN_BUFFER": "售价距离盈亏平衡价太近。",
+        "HEALTHY_MARGIN": "这个方案有较健康的利润缓冲。"
+      },
+      "leverLabels": {
+        "PRODUCT_COST": "产品成本",
+        "SHIPPING_COST": "物流成本",
+        "PLATFORM_FEE": "平台费",
+        "PAYMENT_FEE": "收款手续费",
+        "AD_COST": "广告费用",
+        "REFUND_LOSS": "退款损失",
+        "OTHER_COST": "其他成本",
+        "PLATFORM_SPECIFIC_COSTS": "平台特定成本"
+      }
+    }
   },
   "relatedTools": "相关工具",
   "learnMore": "了解更多",

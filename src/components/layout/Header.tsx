@@ -93,19 +93,19 @@ export default function Header({ locale, dict }: HeaderProps) {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden lg:flex flex-nowrap items-center gap-1">
             {navItems.map((item) => (
               <Link
                 key={item.id}
                 href={item.href}
-                className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+                className={`inline-flex items-center gap-1.5 whitespace-nowrap px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
                   pathname === item.href
                     ? 'bg-blue-50 text-blue-600'
                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
                 }`}
               >
-                <span className="mr-1.5">{item.icon}</span>
-                {item.label}
+                <span className="flex-shrink-0 leading-none">{item.icon}</span>
+                <span className="leading-none">{item.label}</span>
               </Link>
             ))}
           </nav>

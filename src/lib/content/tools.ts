@@ -1,4 +1,4 @@
-export type ToolId = 'amazonFba' | 'tiktokShop' | 'shopify' | 'paymentFees' | 'targetPrice' | 'flipkart';
+export type ToolId = 'amazonFba' | 'tiktokShop' | 'shopify' | 'paymentFees' | 'targetPrice' | 'flipkart' | 'profitDiagnosis';
 
 export interface Tool {
   id: ToolId;
@@ -36,6 +36,11 @@ export const tools: Tool[] = [
     id: 'flipkart',
     slug: 'flipkart-profit-calculator',
     icon: '🛒',
+  },
+  {
+    id: 'profitDiagnosis',
+    slug: 'profit-diagnosis-calculator',
+    icon: '▦',
   },
 ];
 

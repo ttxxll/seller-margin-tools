@@ -135,6 +135,24 @@ export function getPageMeta(locale: Locale, toolId: string): PageMeta {
         canonicalPath: '/zh/flipkart-profit-calculator',
       },
     },
+    profitDiagnosis: {
+      en: {
+        title: 'Profit Diagnosis Calculator & Scenario Comparison Tool',
+        description:
+          'Compare product profit scenarios, diagnose weak margins, and identify the biggest levers across fees, ads, shipping, refunds, and product cost.',
+        keywords:
+          'profit diagnosis calculator, seller margin calculator, scenario comparison tool, ecommerce profit optimization, seller profit analysis, margin diagnosis',
+        canonicalPath: '/profit-diagnosis-calculator',
+      },
+      zh: {
+        title: '利润诊断与方案对比工具 - 跨境电商利润优化计算器',
+        description:
+          '对比不同定价、成本、广告和退款方案，诊断利润率问题，找出影响利润最大的优化杠杆。',
+        keywords:
+          '利润诊断, 方案对比, 跨境电商利润优化, 利润率诊断, 卖家利润分析, 定价方案对比',
+        canonicalPath: '/zh/profit-diagnosis-calculator',
+      },
+    },
   };
 
   const entry = meta[toolId]?.[locale];
