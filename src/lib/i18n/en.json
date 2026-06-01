@@ -144,6 +144,7 @@
     "profitDiagnosis": {
       "title": "Profit Diagnosis & Scenario Comparison",
       "description": "Enter one baseline product model, then compare pricing, cost, ad, fee, and refund changes to see which plan earns more and where margin risk comes from.",
+      "enterProfitDiagnosis": "Enter Profit Diagnosis",
       "baseline": "Baseline",
       "scenarioAdjustments": "Scenario Adjustments",
       "scenarioA": "Plan A: Raise Price",

@@ -144,6 +144,7 @@
     "profitDiagnosis": {
       "title": "利润诊断与方案对比",
       "description": "输入一个基准商品模型，再对比定价、成本、广告、费率和退款变化，快速判断哪个方案更赚钱、利润风险来自哪里。",
+      "enterProfitDiagnosis": "进入利润诊断",
       "baseline": "基准方案",
       "scenarioAdjustments": "方案调整",
       "scenarioA": "方案 A：提高售价",

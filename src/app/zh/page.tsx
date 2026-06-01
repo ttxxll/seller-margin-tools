@@ -285,7 +285,7 @@ export default function ZhHomePage() {
                   { label: dict.totalCost, value: -amazonResult.totalCost },
                   { label: dict.netProfit, value: amazonResult.netProfit, highlight: true, negative: amazonResult.netProfit < 0 },
                 ]} compact />
-                <DiagnosisButton href="/zh/profit-diagnosis-calculator">进入利润诊断</DiagnosisButton>
+                <DiagnosisButton href="/zh/profit-diagnosis-calculator">{zh.calculator.profitDiagnosis.enterProfitDiagnosis}</DiagnosisButton>
                 <DetailLink href="/zh/amazon-fba-profit-calculator">查看详细计算器</DetailLink>
               </ResultShell>
             )}
@@ -307,7 +307,7 @@ export default function ZhHomePage() {
                   { label: dict.totalCost, value: -tiktokResult.totalCost },
                   { label: dict.netProfit, value: tiktokResult.netProfit, highlight: true, negative: tiktokResult.netProfit < 0 },
                 ]} compact />
-                <DiagnosisButton href="/zh/profit-diagnosis-calculator">进入利润诊断</DiagnosisButton>
+                <DiagnosisButton href="/zh/profit-diagnosis-calculator">{zh.calculator.profitDiagnosis.enterProfitDiagnosis}</DiagnosisButton>
                 <DetailLink href="/zh/tiktok-shop-profit-calculator">查看详细计算器</DetailLink>
               </ResultShell>
             )}
@@ -329,7 +329,7 @@ export default function ZhHomePage() {
                   { label: dict.totalCost, value: -shopifyResult.totalCost },
                   { label: dict.netProfit, value: shopifyResult.netProfit, highlight: true, negative: shopifyResult.netProfit < 0 },
                 ]} compact />
-                <DiagnosisButton href="/zh/profit-diagnosis-calculator">进入利润诊断</DiagnosisButton>
+                <DiagnosisButton href="/zh/profit-diagnosis-calculator">{zh.calculator.profitDiagnosis.enterProfitDiagnosis}</DiagnosisButton>
                 <DetailLink href="/zh/shopify-profit-calculator">查看详细计算器</DetailLink>
               </ResultShell>
             )}
@@ -347,7 +347,7 @@ export default function ZhHomePage() {
                   { label: dict.netAmount, value: paymentResult.netAmount, highlight: true },
                   { label: dict.effectiveFeeRate, value: paymentResult.effectiveFeeRate, isPercent: true },
                 ]} compact />
-                <DiagnosisButton href="/zh/profit-diagnosis-calculator">进入利润诊断</DiagnosisButton>
+                <DiagnosisButton href="/zh/profit-diagnosis-calculator">{zh.calculator.profitDiagnosis.enterProfitDiagnosis}</DiagnosisButton>
                 <DetailLink href="/zh/payment-fee-calculator">查看详细计算器</DetailLink>
               </ResultShell>
             )}
@@ -373,7 +373,7 @@ export default function ZhHomePage() {
                     <p className="text-red-700">{targetResult.errorMessage}</p>
                   </div>
                 )}
-                <DiagnosisButton href="/zh/profit-diagnosis-calculator">进入利润诊断</DiagnosisButton>
+                <DiagnosisButton href="/zh/profit-diagnosis-calculator">{zh.calculator.profitDiagnosis.enterProfitDiagnosis}</DiagnosisButton>
                 <DetailLink href="/zh/target-profit-price-calculator">查看详细计算器</DetailLink>
               </ResultShell>
             )}
@@ -396,7 +396,7 @@ export default function ZhHomePage() {
                   { label: dict.totalCost, value: -flipkartResult.totalCost },
                   { label: dict.netProfit, value: flipkartResult.netProfit, highlight: true, negative: flipkartResult.netProfit < 0 },
                 ]} compact />
-                <DiagnosisButton href="/zh/profit-diagnosis-calculator">进入利润诊断</DiagnosisButton>
+                <DiagnosisButton href="/zh/profit-diagnosis-calculator">{zh.calculator.profitDiagnosis.enterProfitDiagnosis}</DiagnosisButton>
                 <DetailLink href="/zh/flipkart-profit-calculator">查看详细计算器</DetailLink>
               </ResultShell>
             )}

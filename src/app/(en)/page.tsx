@@ -285,7 +285,7 @@ export default function HomePage() {
                   { label: dict.totalCost, value: -amazonResult.totalCost },
                   { label: dict.netProfit, value: amazonResult.netProfit, highlight: true, negative: amazonResult.netProfit < 0 },
                 ]} compact />
-                <DiagnosisButton href="/profit-diagnosis-calculator">进入利润诊断</DiagnosisButton>
+                <DiagnosisButton href="/profit-diagnosis-calculator">{en.calculator.profitDiagnosis.enterProfitDiagnosis}</DiagnosisButton>
                 <DetailLink href="/amazon-fba-profit-calculator">View detailed calculator</DetailLink>
               </ResultShell>
             )}
@@ -307,7 +307,7 @@ export default function HomePage() {
                   { label: dict.totalCost, value: -tiktokResult.totalCost },
                   { label: dict.netProfit, value: tiktokResult.netProfit, highlight: true, negative: tiktokResult.netProfit < 0 },
                 ]} compact />
-                <DiagnosisButton href="/profit-diagnosis-calculator">进入利润诊断</DiagnosisButton>
+                <DiagnosisButton href="/profit-diagnosis-calculator">{en.calculator.profitDiagnosis.enterProfitDiagnosis}</DiagnosisButton>
                 <DetailLink href="/tiktok-shop-profit-calculator">View detailed calculator</DetailLink>
               </ResultShell>
             )}
@@ -329,7 +329,7 @@ export default function HomePage() {
                   { label: dict.totalCost, value: -shopifyResult.totalCost },
                   { label: dict.netProfit, value: shopifyResult.netProfit, highlight: true, negative: shopifyResult.netProfit < 0 },
                 ]} compact />
-                <DiagnosisButton href="/profit-diagnosis-calculator">进入利润诊断</DiagnosisButton>
+                <DiagnosisButton href="/profit-diagnosis-calculator">{en.calculator.profitDiagnosis.enterProfitDiagnosis}</DiagnosisButton>
                 <DetailLink href="/shopify-profit-calculator">View detailed calculator</DetailLink>
               </ResultShell>
             )}
@@ -347,7 +347,7 @@ export default function HomePage() {
                   { label: dict.netAmount, value: paymentResult.netAmount, highlight: true },
                   { label: dict.effectiveFeeRate, value: paymentResult.effectiveFeeRate, isPercent: true },
                 ]} compact />
-                <DiagnosisButton href="/profit-diagnosis-calculator">进入利润诊断</DiagnosisButton>
+                <DiagnosisButton href="/profit-diagnosis-calculator">{en.calculator.profitDiagnosis.enterProfitDiagnosis}</DiagnosisButton>
                 <DetailLink href="/payment-fee-calculator">View detailed calculator</DetailLink>
               </ResultShell>
             )}
@@ -373,7 +373,7 @@ export default function HomePage() {
                     <p className="text-red-700">{targetResult.errorMessage}</p>
                   </div>
                 )}
-                <DiagnosisButton href="/profit-diagnosis-calculator">进入利润诊断</DiagnosisButton>
+                <DiagnosisButton href="/profit-diagnosis-calculator">{en.calculator.profitDiagnosis.enterProfitDiagnosis}</DiagnosisButton>
                 <DetailLink href="/target-profit-price-calculator">View detailed calculator</DetailLink>
               </ResultShell>
             )}
@@ -396,7 +396,7 @@ export default function HomePage() {
                   { label: dict.totalCost, value: -flipkartResult.totalCost },
                   { label: dict.netProfit, value: flipkartResult.netProfit, highlight: true, negative: flipkartResult.netProfit < 0 },
                 ]} compact />
-                <DiagnosisButton href="/profit-diagnosis-calculator">进入利润诊断</DiagnosisButton>
+                <DiagnosisButton href="/profit-diagnosis-calculator">{en.calculator.profitDiagnosis.enterProfitDiagnosis}</DiagnosisButton>
                 <DetailLink href="/flipkart-profit-calculator">View detailed calculator</DetailLink>
               </ResultShell>
             )}
